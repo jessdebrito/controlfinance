@@ -1,6 +1,11 @@
 import styles from "./styles.module.scss";
+import { Dispatch, SetStateAction } from "react";
 
-export const ResumeSection = () => {
+interface ResumeSectionProps {
+  setType: Dispatch<SetStateAction<"Todos" | "Entradas" | "Saídas">>;
+}
+
+export const ResumeSection: React.FC<ResumeSectionProps> = ({ setType }) => {
   return (
     <section className={styles.resume}>
       <h2 className="title2">Resumo financeiro</h2>
