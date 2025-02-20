@@ -18,7 +18,7 @@ Front-end: `Vite`, `React`, `SCSS`,\
 Mais projetos: [Portfólio](https://jessdebrito.com/)
 
 ## Prévia
-[<img align="center" alt="preview" src="./public/preview.png"/>](https://linkcurto.vercel.app/)
+[<img align="center" alt="preview" src="./public/preview.png"/>](https://controlefinanceiro-jessdebrito.vercel.app/)
 
 
 <br/><br/>
