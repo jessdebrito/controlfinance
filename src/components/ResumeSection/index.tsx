@@ -1,4 +1,9 @@
 import styles from "./styles.module.scss";
+import { Dispatch, SetStateAction } from "react";
+
+interface ResumeSectionProps {
+  setType: Dispatch<SetStateAction<"Todos" | "Entradas" | "Saídas">>;
+}
 
 export const ResumeSection = () => {
   return (

@@ -1,12 +1,17 @@
 import styles from "./styles.module.scss";
 import TrashImg from "../../../assets/trash.svg";
 
-export const EntryCard = () => {
+export const EntryCard = ({ entry }) => {
   return (
     <li className={styles.card}>
-      <p>R$ 00,00</p>
+      <p>
+        {entry.value.toLocaleString("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        })}
+      </p>
       <div>
-        <span>Entrada</span>
+        <span>{entry.categoryID === 0 ? "Entrada" : "Saída"}</span>
         <button>
           <img src={TrashImg} alt="Imagem de lixeira" />
         </button>
